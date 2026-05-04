@@ -1,15 +1,13 @@
-import { View, Text } from "react-native";
+import React from 'react';
+import { StatusBar } from 'expo-status-bar';
+import { AuthProvider } from './src/context/AuthContext';
+import RootNavigator from './src/navigation/RootNavigator';
 
 export default function App() {
   return (
-    <View
-      style={{
-        flex: 1,
-        justifyContent: "center",
-        alignItems: "center",
-      }}
-    >
-      <Text>Universal React with Expo</Text>
-    </View>
+    <AuthProvider>
+      <StatusBar style="light" backgroundColor="#1A1A1A" />
+      <RootNavigator />
+    </AuthProvider>
   );
 }
