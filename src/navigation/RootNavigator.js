@@ -1,11 +1,11 @@
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
-import ClienteNavigator from './ClienteNavigator';
+import PublicNavigator from './PublicNavigator';
 
 export default function RootNavigator() {
   return (
     <NavigationContainer>
-      <ClienteNavigator />
+      <PublicNavigator />
     </NavigationContainer>
   );
 }
